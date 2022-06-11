@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site</title>
+    {% for i in value %}
+        <tr></br>
+            <td><p>Title: {{ i.title }}</p></td>
+            <td><p>Text: {{ i.text_area }}</p></td>
+            <td><p>Boolean: {{ i.bool_data }}</p></td>
+            <td><p>Date created: {{ i.created_on }}</p></td>
+        </tr>
+    {% endfor %}
+</head>
+<body>
+
+</body>
+</html>
